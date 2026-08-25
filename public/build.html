@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Build your document — Kestrel Contracts</title>
+<meta name="description" content="Answer the questions and watch your UK employment document assemble, then download it in Word and PDF.">
+<link rel="canonical" href="https://kestrelcontracts.example/build">
+<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>&#128196;</text></svg>">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="masthead">
+  <div class="shell masthead__inner">
+    <a class="wordmark" href="/">Kestrel<span>Contracts</span></a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav" id="site-nav" aria-label="Primary">
+      <a href="/templates">Templates</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/guides">Guides</a>
+      <a href="/faq">FAQ</a>
+      <a href="/about">About</a>
+      <a class="btn btn--primary btn--small" href="/templates">Build a document</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<div class="shell">
+  <div class="crumbs"><a href="/">Home</a><span>/</span><a href="/templates">Templates</a><span>/</span><span id="builder-title">Build</span></div>
+</div>
+
+<div class="shell builder">
+  <nav class="builder__nav" aria-label="Questionnaire steps">
+    <ol id="step-nav"></ol>
+    <div style="margin-top:1.5rem">
+      <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Completion">
+        <div class="progress__bar" id="progress-bar" style="width:0%"></div>
+      </div>
+      <p class="progress__text" id="progress-text">Loading</p>
+      <div class="gaps" id="gaps"></div>
+    </div>
+    <button type="button" class="btn btn--ghost btn--small" id="reset-answers" style="margin-top:1rem;padding-left:0">Start again</button>
+  </nav>
+
+  <section class="builder__panel" aria-labelledby="step-title">
+    <h2 id="step-title">Loading</h2>
+    <p class="builder__blurb" id="step-blurb"></p>
+    <form id="step-form" novalidate></form>
+    <div class="builder__actions">
+      <button type="button" class="btn btn--secondary" id="prev-step">Back</button>
+      <button type="button" class="btn btn--primary" id="next-step">Next</button>
+    </div>
+  </section>
+
+  <section class="builder__preview" aria-label="Document preview">
+    <div class="preview__bar">
+      <h2>Live preview</h2>
+      <div class="preview__tools">
+        <button type="button" class="btn btn--secondary btn--small" id="copy-text">Copy as text</button>
+        <button type="button" class="btn btn--secondary btn--small" id="download-pdf" disabled>PDF</button>
+        <button type="button" class="btn btn--primary btn--small" id="download-docx" disabled>Word</button>
+      </div>
+    </div>
+    <article class="doc" id="preview"></article>
+  </section>
+</div>
+
+<div class="shell" style="padding-bottom:3rem">
+
+<div class="callout callout--warning">
+  <strong>This is not legal advice.</strong> Kestrel Contracts supplies document templates, not advice on
+  your situation. The generated document is a starting point drafted for common circumstances. If the
+  role is senior, the money is significant, or anything about the arrangement is unusual, have a
+  solicitor review it before anyone signs.
+</div>
+
+</div>
+
+</main>
+<footer class="footer">
+  <div class="shell">
+    <div class="footer__grid">
+      <div>
+        <a class="wordmark" href="/">Kestrel<span>Contracts</span></a>
+        <p style="margin-top:0.75rem;color:var(--slate);max-width:34ch">
+          UK employment documents you answer your way through, then download in Word and PDF.
+        </p>
+      </div>
+      <div>
+        <h4>Documents</h4>
+        <ul>
+          <li><a href="/build?template=employment-contract">Employment contract</a></li>
+          <li><a href="/build?template=fixed-term-contract">Fixed-term contract</a></li>
+          <li><a href="/build?template=zero-hours-contract">Zero hours contract</a></li>
+          <li><a href="/build?template=consultancy-agreement">Consultancy agreement</a></li>
+          <li><a href="/templates">All templates</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="/guides">Employment law guides</a></li>
+          <li><a href="/guides#particulars">Written particulars</a></li>
+          <li><a href="/guides#notice">Notice periods</a></li>
+          <li><a href="/guides#restrictions">Restrictive covenants</a></li>
+          <li><a href="/faq">Frequently asked questions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about">About us</a></li>
+          <li><a href="/pricing">Pricing</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/legal#terms">Terms of use</a></li>
+          <li><a href="/legal#privacy">Privacy notice</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <span>&copy; 2026 Kestrel Contracts. Templates for the law of England and Wales, Scotland and Northern Ireland.</span>
+      <span>Kestrel Contracts is not a law firm and does not provide legal advice.</span>
+    </div>
+  </div>
+</footer>
+<script src="/assets/js/catalogue.js"></script>
+<script src="/assets/js/engine.js"></script>
+<script src="/assets/js/templates.js"></script>
+<script src="/assets/js/docx.js"></script>
+<script src="/assets/js/pdf.js"></script>
+<script src="/assets/js/site.js"></script>
+<script src="/assets/js/build.js"></script>
+</body>
+</html>

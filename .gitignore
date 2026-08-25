@@ -1,0 +1,10 @@
+node_modules/
+.DS_Store
+*.log
+
+# Vercel
+.vercel
+
+# Generated documents from local testing
+*.docx
+*.pdf
